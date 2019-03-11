@@ -1,0 +1,65 @@
+.key-image-title-container {
+  display: flex;
+
+  .key-content {
+
+  }
+
+  .key-image {
+    background-size: cover !important;
+    box-shadow: 0px 30px 50px 0px rgba(black, 0.2);
+    height: 70vh;
+    width: 80vw;
+  }
+
+  .key-title {
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 80px;
+    margin-bottom: 20px;
+  }
+}
+
+.why-help-project-a {
+  .key-image-title-container {
+    .key-image {
+      background: url('/visuals/picture-a.jpg') top center no-repeat;
+      margin-right: 30px;
+    }
+  }
+}
+
+.why-help-project-b {
+  background: $brand_magenta;
+  margin-top: -100px;
+  padding: 100px 0;
+
+  .key-image-title-container {
+    .key-title {
+      margin-top: 100px;
+    }
+
+    .key-image {
+      background: url('/visuals/picture-b.jpg') top center no-repeat;
+      margin-left: 30px;
+    }
+  }
+}
+
+
+.why-help-project-c {
+  background: $brand_turquoise;
+  margin-top: -100px;
+  padding: 100px 0;
+
+  .key-image-title-container {
+    .key-title {
+      margin-top: 100px;
+    }
+
+    .key-image {
+      background: url('/visuals/picture-c.jpg') top center no-repeat;
+      margin-right: 30px;
+    }
+  }
+}

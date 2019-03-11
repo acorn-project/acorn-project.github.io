@@ -1,1 +1,18 @@
-theme: jekyll-theme-slate
+# Site settings
+title: Acorn Project
+email: harpal.singh@sage.com
+description: "Official website for the charity Acorn Project"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Build settings
+markdown: kramdown
+safe: true
+permalink: pretty
+exclude: [Gemfile, Gemfile.lock, Guardfile, README.md, CNAME]
+sass:
+  style: :compressed
+  sass_dir: _scss
+plugins:
+ - jekyll-coffeescript
+

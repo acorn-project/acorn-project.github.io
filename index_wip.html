@@ -1,0 +1,85 @@
+---
+layout: default
+---
+
+<div class="hero">
+  <div class="wrapper">
+    <h1><img src="/visuals/logo.svg" alt="Acorn Project" class="hero-logo" /></h1>
+    <div class="highlight-segment">
+      <h2>Initiative header, what's our main focus for the site launching?</h2>
+      <p>Sub-text blurb about the intiative.</p>
+      <a class="button secondary white" href="#">Find out more</a>
+    </div>
+  </div>
+</div>
+<div class="key-segments">
+  <div class="wrapper">
+    <h2>Every child no matter where they are born deserves the right to succeed in life.</h2>
+    <p class="sub-title">That's why we're here/ We're enabling the people of Kenya to have access to clean water and sanitation and to allow children to have access to good quality education.</p>
+
+    <div class="image-segment">
+      <div class="image-container"></div>
+      <div class="image-text">Babies we weighed for........</div>
+    </div>
+  </div>
+</div>
+<div class="video-segment">
+  <div class="wrapper">
+    <h2>Learn about our history</h2>
+    <p>You can learn about our projects directly from one of the founders of this charity, Muriel Armstrong.</p>
+    <div class="youtube-container video" id="youtube">
+      <div id="acorn-history"></div>
+    </div>
+  </div>
+</div>
+<div class="partners-segment">
+  <div class="wrapper">
+    <h2>Our Partners and Support</h2>
+    <p class="summary">We need your voice and support. No matter who you are, or where you are from, you can make a difference. Join us know.</p>
+
+    <div class="partner-images">
+      <img class="partner-image" src="/visuals/partner-wfk.png" />
+      <img class="partner-image" src="/visuals/partner-uoy.png" />
+      <img class="partner-image" src="/visuals/partner-gri.png" />
+      <img class="partner-image" src="/visuals/partner-bbfk.png" />
+    </div>
+    <div class="learn-more-partners">
+      <a class="button secondary" href="#">Learn more about our partners</a>
+    </div>
+  </div>
+</div>
+<div class="involved-segment">
+  <div class="wrapper">
+    <h2>Get Involved</h2>
+    <p class="summary">That's why we are here. We're enabling the people of Kenya to have access to clean water and sanitation and to allow children to have access to good quality education.</p>
+    <div class="get-involved-actions">
+      <a class="button secondary" href="#">Volunteer</a>
+    </div>
+  </div>
+</div>
+
+<script>
+// 2. This code loads the IFrame Player API code asynchronously.
+var tag = document.createElement('script');
+
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+// 3. This function creates an <iframe> (and YouTube player)
+//    after the API code downloads.
+var youtube_player;
+function onYouTubeIframeAPIReady() {
+  youtube_player = new YT.Player('acorn-history', {
+    height: '720',
+    width: '1280',
+    playerVars: {
+      'controls': 2,
+      'modestbranding': 1,
+      'rel': 0,
+      'theme': 'dark'
+    },
+    videoId: 'feKjdHxQkk0'
+  });
+}
+</script>

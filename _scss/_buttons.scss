@@ -1,0 +1,58 @@
+.button {
+  border-radius: 5px;
+  color: white;
+  display: inline-block;
+  font-weight: 700;
+  height: 40px;
+  line-height: 40px;
+  padding: 0px 20px;
+  position: relative;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+
+  &.primary {
+    &.yellow {
+      background: $yellow;
+      color: $brand-blue;
+
+      &:hover {
+        background: $yellow;
+        color: black;
+      }
+    }
+  }
+
+  &.secondary {
+    box-shadow: inset 0px 0px 0px 2px $brand-magenta;
+    color: $brand-magenta;
+
+    &:hover {
+      background: $brand-magenta;
+      color: white;
+    }
+
+    &.yellow {
+      box-shadow: inset 0px 0px 0px 2px $yellow;
+      color: $yellow;
+
+      &:hover {
+        background: $yellow;
+        color: black;
+      }
+    }
+
+    &.white {
+      box-shadow: inset 0px 0px 0px 2px white;
+      color: white;
+
+      &:hover {
+        background: white;
+        color: $brand-magenta;
+      }
+    }
+  }
+
+  // all buttons
+  &:hover {
+  }
+}
